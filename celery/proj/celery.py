@@ -3,7 +3,8 @@ from __future__ import absolute_import
 from celery import Celery
 
 app = Celery('proj',
-             broker='amqp://guest:guest@localhost:5672//')
+             broker='amqp://guest:guest@localhost:5672//', ,
+             include=['proj.tasks'])
 
 # Optional configuration, see the application user guide.
 app.conf.update(
