@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from proj.celery import app
+from custom_class.celery import app
 
 
 class _AddTask(app.Task):
