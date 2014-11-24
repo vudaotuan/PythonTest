@@ -10,4 +10,4 @@ def add(items):
 	for x in items:
 		total = total + x
 	print('>>> Total: {0}'.format(total))
-    return total
+	return total
