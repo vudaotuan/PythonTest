@@ -9,6 +9,5 @@ def add(items):
 	total = 0
 	for x in items:
 		total = total + x
-
-    print('>>> Total: {0}'.format(total))
+	print('>>> Total: {0}'.format(total))
     return total
