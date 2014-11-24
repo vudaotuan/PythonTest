@@ -4,11 +4,6 @@ from celery import Celery
 
 app = Celery('tasks', broker='amqp://guest:guest@localhost:5672//')
 
-@app.task(base=Batches, flush_every=5, flush_interval=10)
-def add(items):
-	total = 0
-    for x in items:
-    	total = total + x
-
-    print('>>> Total: {0}'.format(total))
-    return total
+@app.task
+def add(x, y):
+    return x + y
