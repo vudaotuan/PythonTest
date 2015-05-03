@@ -1,8 +1,15 @@
 __author__ = 'Administrator'
-data = {"enb_item_name": "Qu\u1ea7n jean n\u1eef l\u01b0ng cao ch\u1ec9 120k, nhanh ch\u00e2n n\u00e0o c\u00e1c b\u1ea1n", "encoding": "UTF-8", "ip": "42.119.167.30", "enb_shop_id": "843245", "enb_user_id": "0", "agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; vi-vn; GT-I8552 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30", "enb_cate_name": "Jeans, Pull/ \u00c1o ph\u00f4ng", "resolutions": "480x800", "enb_province_id": "22", "enb_user_province_id": "22", "enb_list_item": ["1616662", "1953116", "1004549", "1575377", "2019636"], "title": "Qu\u1ea7n jean n\u1eef l\u01b0ng cao ch\u1ec9 120k, nhanh ch\u00e2n n\u00e0o c\u00e1c b\u1ea1n - Tin \u0111\u0103ng ID: 2161508 | \u00c9nB\u1ea1c.com", "enb_user_province_name": "H\u00e0 N\u1ed9i", "enb_shop_name": "bansi24h", "referrer_session": "http://enbac.com/Ha-Noi/c30/Thoi-trang-Nu", "platform": "Linux armv7l", "enb_referer_element_id": "0", "enb_province_name": "H\u00e0 N\u1ed9i", "page_name": "detail", "enb_type": "visit", "cookie_enabled": 1, "enb_item_id": "2161508", "referrer_visit": "http://enbac.com/Ha-Noi/c30/Thoi-trang-Nu", "key_word": "None", "enb_cate_id": "37", "rd_id": "a20c7f58-835e-11e4-b4ce-090652fc5f50", "referrer_domain": "enbac.com", "sessionid": 3081114025, "lang": "vi-VN", "url": "http://enbac.com/Ha-Noi/Thoi-trang-Nu/p2161508/Quan-jean-nu-lung-cao-chi-120k-nhanh-chan-nao-cac-ban.html?utm_source=item_vip&utm_medium=vip&utm_campaign=2161508-Toan-Quoc", "start_time_visit": 1418540378}
+
+import json
+
+data = """{encoding": "UTF-8", "ip": "113.190.157.249", "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36", "resolutions": "1920x1080", "user_id": 3752, "title": "K\u1ebft qu\u1ea3 t\u00ecm ki\u1ebfm cho t\u1eeb kh\u00f3a: b\u00e1n m\u00e1y \u1ea3nh | Muare.vn c\u1ed9ng \u0111\u1ed3ng th\u01b0\u01a1ng m\u1ea1i \u0111i\u1ec7n t\u1eed", "item_name": "", "referrer_session": "http://muare.vn/search/36475159/?q=b%C3%A1n+m%C3%A1y+%E1%BA%A3nh+kts&o=relevance", "platform": "Win32", "page_name": "search", "rd_id": "dabe97ac-c712-11e4-bd82-cb58b39a1380", "start_time_visit": 1426489186, "cookie_enabled": 1, "province_name": "ha noi", "referrer_visit": "http://muare.vn/search/36475159/?q=b%C3%A1n+m%C3%A1y+%E1%BA%A3nh+kts&o=relevance", "key_word": "b\u00e1n m\u00e1y \u1ea3nh", "referrer_domain": "muare.vn", "sessionid": 0, "item_id": 0, "province_id": 1, "category_name": "", "lang": "vi", "url": "http://muare.vn/search/36475218/?q=b%C3%A1n+m%C3%A1y+%E1%BA%A3nh&o=relevance", "type": "web", "list_item_id": "", "user_name": "BigMickey", "category_id": 0}"""
+
+print data
+
+data_json = json.loads(data)
 
 
-print data['enb_list_item']
+print data_json['key_word']
 
 print len(data['enb_list_item'])
 
