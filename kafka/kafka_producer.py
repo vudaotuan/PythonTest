@@ -5,7 +5,7 @@ __create_time__ = '02/05/2015 10:07 PM'
 from kafka import SimpleProducer, KafkaClient
 
 # To send messages synchronously
-kafka = KafkaClient("10.3.9.13:2181")
+kafka = KafkaClient("10.3.9.13:6667")
 producer = SimpleProducer(kafka)
 
 # Note that the application is responsible for encoding messages to type str
